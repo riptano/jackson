@@ -30,10 +30,11 @@ public class DomElementJsonDeserializer
         try {
             DocumentBuilderFactory bf = DocumentBuilderFactory.newInstance();
             bf.setNamespaceAware(true);
+            bf.setExpandEntityReferences(false);
             bf.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true);
             builder = bf.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
-            throw new RuntimeException();
+            throw new RuntimeException("Problem creating DocumentBuilder: " + e.toString());
         }
     }
 

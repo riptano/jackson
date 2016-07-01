@@ -24,6 +24,7 @@ public abstract class DOMDeserializer<T> extends FromStringDeserializer<T>
         _parserFactory = DocumentBuilderFactory.newInstance();
         // yup, only cave men do XML without recognizing namespaces...
         _parserFactory.setNamespaceAware(true);
+        _parserFactory.setExpandEntityReferences(false);
         try {
             _parserFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
         } catch(ParserConfigurationException pce) {
