@@ -86,7 +86,7 @@ org.codehaus.jackson.io;version='${IMPL_VERSION}',
 org.codehaus.jackson.type;version='${IMPL_VERSION}',
 org.codehaus.jackson.util;version='${IMPL_VERSION}',
 org.xml.sax,org.w3c.dom,
-javax.xml.datatype, javax.xml.namespace, javax.xml.parsers
+javax.xml.datatype, javax.xml.namespace, javax.xml.parsers, javax.xml
 "
          dynamicImportPackage="
 org.joda.time, org.joda.time.format,
@@ -187,7 +187,7 @@ org.codehaus.jackson.io;version='${IMPL_VERSION}',
 org.codehaus.jackson.type;version='${IMPL_VERSION}',
 org.codehaus.jackson.util;version='${IMPL_VERSION}',
 org.xml.sax, org.w3c.dom,
-javax.xml.datatype, javax.xml.namespace, javax.xml.parsers
+javax.xml.datatype, javax.xml.namespace, javax.xml.parsers, javax.xml
 "
          dynamicImportPackage="
 org.joda.time, org.joda.time.format,
@@ -264,6 +264,7 @@ javax.ws.rs
 ,org.codehaus.jackson.map.util;version='${IMPL_VERSION}'
 ,org.codehaus.jackson.type;version='${IMPL_VERSION}'
 ,org.codehaus.jackson.util;version='${IMPL_VERSION}'
+,javax.xml
 "
          dynamicImportPackage="org.codehaus.jackson.xc"
          exportpackage="
@@ -328,6 +329,7 @@ org.codehaus.jackson.mrbean;version=${IMPL_VERSION}"
          filename="jackson-xc-${IMPL_VERSION}"
          importPackage="
 javax.activation
+,javax.xml
 ,javax.xml.bind
 ,javax.xml.bind.annotation
 ,javax.xml.bind.annotation.adapters
